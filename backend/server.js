@@ -19,7 +19,12 @@ const port = process.env.PORT || 5000;
 
 
 // Middleware
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+// app.use(cors({ origin:'*', credentials: true }));
+app.use(cors({
+  origin: '*', // Allow requests from any origin (not recommended for production)
+  methods: ['GET', 'POST'],
+  credentials: true,  // Allow cookies if necessary
+}));
 app.use(bodyParser.json());
 
 // Connexion à MongoDB

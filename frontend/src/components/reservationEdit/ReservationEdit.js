@@ -19,7 +19,7 @@ const ReservationEdit = () => {
     setLoading(true);
     const token = localStorage.getItem("authToken");
     try {
-      const response = await axios.get("http://localhost:5000/api/reservations", {
+      const response = await axios.get("https://drivingschool-qcwi.onrender.com/api/reservations", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const userReservations = response.data.filter(
@@ -42,7 +42,7 @@ const ReservationEdit = () => {
     if (window.confirm("Are you sure you want to delete this reservation?")) {
       const token = localStorage.getItem("authToken");
       try {
-        await axios.delete(`http://localhost:5000/api/reservations/${id}`, {
+        await axios.delete(`https://drivingschool-qcwi.onrender.com/api/reservations/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -64,7 +64,7 @@ const ReservationEdit = () => {
     const token = localStorage.getItem("authToken");
     try {
       await axios.put(
-        `http://localhost:5000/api/reservations/${selectedReservation._id}`,
+        `https://drivingschool-qcwi.onrender.com/api/reservations/${selectedReservation._id}`,
         selectedReservation,
         {
           headers: {

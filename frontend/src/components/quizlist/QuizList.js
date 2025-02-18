@@ -8,7 +8,7 @@ function QuizList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/quizzes")
+      .get("https://drivingschool-qcwi.onrender.com/api/quizzes")
       .then((response) => setQuizzes(response.data))
       .catch((error) =>
         console.error("Error while loading quizzes", error)
