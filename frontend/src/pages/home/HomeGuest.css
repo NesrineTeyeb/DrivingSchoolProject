@@ -180,7 +180,7 @@ body {
 }
 
 #avis {
-  width:80%;
+  width:90%;
   margin:auto;
   text-align: center;
   padding: 40px;
@@ -188,9 +188,9 @@ body {
 }
 .avis {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap:20px;
 }
 
 .avis .avis-items {
@@ -207,6 +207,12 @@ body {
 .avis .avis-items:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 576px) {
+  .avis .avis-items {
+    width: 90%; /* Prendre 90% de la largeur disponible */
+    margin: 10px auto; 
+  }
 }
 
 @media (max-width: 768px) {

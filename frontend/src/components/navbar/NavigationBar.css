@@ -1,34 +1,65 @@
 .navbar{
-    padding:0px !important;
-    
+  padding:0px !important;
+  
 }
 .navbar-brand {
-  display: flex;
-  align-items: center;
-  padding:0px !important;
+display: flex;
+align-items: center;
+padding:0px !important;
 
 }
 
 .navbar-brand img {
-  margin-right: 20px; /* Ajustez la valeur selon vos besoins */
+margin-right: 20px; /* Ajustez la valeur selon vos besoins */
 }
 .navbar-brand span {
-  color: #343a40; /* Dark color for links */
+color: #343a40; /* Dark color for links */
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  font-weight: bold;
-  color: #142d4c; /* Dark color for links */
-  font-size: 19px;
-  font-family: Garamond ;
+font-weight: bold;
+color: #142d4c; /* Dark color for links */
+font-size: 19px;
+font-family: Garamond ;
+
+}
+.custom-toggler {
+/* border: none !important; */
+background-color: #f3a333  !important;
+
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #f3a333; /* Dark hover effect */
+color: #f3a333; /* Dark hover effect */
 }
 .navbar-dark .navbar-nav .nav-link.active-link {
-  color: #f3a333; /* Couleur au survol et lorsqu'actif */
+color: #f3a333; /* Couleur au survol et lorsqu'actif */
 }
 .navbar-brand span:hover {
-  color: #f3a333; /* Dark hover effect */
+color: #f3a333; /* Dark hover effect */
+}
+@media (max-width: 992px) {
+.navbar-collapse {
+  text-align: center;
+}
+}
+
+/* Ajustements pour les petits écrans */
+@media (max-width: 576px) {
+.navbar-toggler {
+  border-color: #142d4c; /* Change la couleur de la bordure du toggle */
+  background-color: #f3a333;
+}
+.navbar-brand img {
+  margin-right: 10px; /* Réduit la marge pour les petits écrans */
+}
+
+.navbar-brand span {
+  font-size: 16px; /* Réduit la taille de la police */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 16px; /* Réduit la taille de la police pour les liens */
+  padding: 8px; /* Ajuste le padding pour un meilleur rendu */
+}
 }
