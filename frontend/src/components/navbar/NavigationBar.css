@@ -25,7 +25,14 @@ font-family: Garamond ;
 }
 .custom-toggler {
 /* border: none !important; */
-background-color: #f3a333  !important;
+ background-color: #f3a333  !important;
+  padding: 10px !important;
+  width:40px;
+  height:40px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
